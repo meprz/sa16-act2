@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevPortfolio</title>
+    <title>The Greatest Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,44 @@
   </head>
 
   <body>
+    <style>
+      nav {
+        background-color: rgb(0, 160, 160);
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        // font-weight: bold;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+      
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+      
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+    
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', home_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'My Work', my_work_path %></li>
+        <li><%= link_to 'Contact', contact_path %></li>
+      </ul>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
