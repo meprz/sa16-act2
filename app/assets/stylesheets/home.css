@@ -33,14 +33,14 @@ body {
 }
 
 
-h1, h2 {
+h1, h2, h3, h4 {
     color: turquoise;
     font-size: 24px;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.home-image {
+.portfolio-image {
     width: 60%;
     height: auto;
 }
